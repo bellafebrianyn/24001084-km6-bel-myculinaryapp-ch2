@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyCulinaryApp</string>
+    <string name="name">Hai Bella,</string>
+    <string name="greetings">Mau makan apa hari ini?</string>
+    <string name="tittle_banner">Diskon 50%</string>
+    <string name="desc_banner">Penawaran istimewa! Nikmati diskon 50% untuk pembelian Anda!</string>
 </resources>
