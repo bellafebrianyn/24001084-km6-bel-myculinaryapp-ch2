@@ -2,4 +2,28 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="primary">#008d21</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#E0F2E9</color>
+    <color name="on_primary_container">#000000</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#FFC107</color>
+    <color name="on_secondary">#000000</color>
+    <color name="secondary_container">#FFF8E1</color>
+    <color name="on_secondary_container">#000000</color>
+
+    <!-- Tertiary Colors -->
+    <color name="tertiary">#3F51B5</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#C5CAE9</color>
+    <color name="on_tertiary_container">#000000</color>
+
+    <!-- Error Colors -->
+    <color name="error">#FF0000</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#FFCDD2</color>
+    <color name="on_error_container">#000000</color>
 </resources>
