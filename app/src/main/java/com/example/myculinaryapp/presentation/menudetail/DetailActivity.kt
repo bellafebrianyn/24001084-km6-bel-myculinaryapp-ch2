@@ -4,11 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.myculinaryapp.R
 import com.example.myculinaryapp.data.model.Menu
 import com.example.myculinaryapp.databinding.ActivityDetailBinding
 import com.example.myculinaryapp.utils.toIndonesianFormat
@@ -35,7 +31,6 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(binding.root)
         getIntentData()
         val menu: Menu? = intent.extras?.getParcelable(EXTRAS_DETAIL_DATA)
@@ -43,12 +38,6 @@ class DetailActivity : AppCompatActivity() {
         updateTotalPrice()
         setUpQuantityButton()
         backToHome()
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
     }
 
     private fun backToHome() {
