@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myculinaryapp.R
 import com.example.myculinaryapp.data.model.Menu
 import com.example.myculinaryapp.databinding.ActivityDetailBinding
 import com.example.myculinaryapp.utils.toIndonesianFormat
@@ -62,7 +63,11 @@ class DetailActivity : AppCompatActivity() {
         binding.layoutDetailMenu.tvPrice.text = menu.price.toIndonesianFormat()
         binding.layoutDetailMenu.tvDescMenu.text = menu.desc
         binding.layoutDetailLocation.tvDetailLocation.text = menu.location
-        binding.layoutAddToCart.btnTotalPrice.setText("Tambah ke Keranjang - ${menu.price.toIndonesianFormat()}")
+        binding.layoutAddToCart.btnTotalPrice.setText(
+            getString(
+                R.string.add_to_cart_price,
+                menu.price.toIndonesianFormat()
+            ))
         navigateToGoogleMaps(menu)
     }
 
@@ -90,8 +95,12 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun calculateTotalPrice() {
-        val totalHarga = currentQuantity * pricePerItem
-        binding.layoutAddToCart.btnTotalPrice.setText("Tambah ke Keranjang - ${totalHarga.toIndonesianFormat()}")
+        val totalPrice = currentQuantity * pricePerItem
+        binding.layoutAddToCart.btnTotalPrice.setText(
+            getString(
+                R.string.add_to_cart_total_price,
+                totalPrice.toIndonesianFormat()
+            ))
     }
 
     private fun updateTotalPrice() {

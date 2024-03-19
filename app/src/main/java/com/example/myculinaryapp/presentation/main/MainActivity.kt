@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding.rvCategory.apply {
             adapter = this@MainActivity.categoryAdapter
         }
-        categoryAdapter?.submitData(categoryDataSource.dataCategory())
+        categoryAdapter.submitData(categoryDataSource.dataCategory())
     }
 
     private fun changeProfileIcon() {
