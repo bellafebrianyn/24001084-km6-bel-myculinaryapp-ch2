@@ -1,10 +1,10 @@
-package com.example.myculinaryapp
+package com.example.myculinaryapp.presentation.categorylist.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myculinaryapp.data.model.Category
 import com.example.myculinaryapp.databinding.ItemCategoryBinding
-import com.example.myculinaryapp.model.Category
 
 class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
 
@@ -13,7 +13,6 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>
     fun submitData(items: List<Category>) {
         data.addAll(items)
     }
-
 
     override fun onCreateViewHolder(
         parent: ViewGroup,

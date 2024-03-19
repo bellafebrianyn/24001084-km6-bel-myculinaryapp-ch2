@@ -4,4 +4,11 @@
     <string name="greetings">Mau makan apa hari ini?</string>
     <string name="tittle_banner">Diskon 50%</string>
     <string name="desc_banner">Penawaran istimewa! Nikmati diskon 50% untuk pembelian Anda!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_menu_list">List Menu Makanan</string>
+    <string name="title_location">Lokasi</string>
+    <string name="action_name">Hai Bella,</string>
+    <string name="quantity_item">1</string>
+    <string name="action_greetings">Hallo</string>
 </resources>
