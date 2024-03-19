@@ -7,6 +7,7 @@ fun Double?.doubleToCurrency(language: String, country: String): String? {
     return try {
         val localeID = Locale(language, country)
         val numberFormat = NumberFormat.getCurrencyInstance(localeID)
+        numberFormat.maximumFractionDigits = 0
         numberFormat.format(this).toString()
     } catch (e: Exception) {
         null
